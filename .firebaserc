@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "satin-bowerbird": {
+      "hosting": {
+        "bowerbird-app": [
+          "satin-bowerbird"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "satin-bowerbird"
+  }
+}
