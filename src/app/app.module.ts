@@ -28,9 +28,12 @@ import { USE_EMULATOR as USE_FUNCTIONS_EMULATOR } from '@angular/fire/functions'
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { environment } from 'src/environments/environment';
+import { LandingPage } from './containers/landing/landing.page';
+import { DashboardPage } from './containers/dashboard/dashboard.page';
+import { ImportFromFilePage } from './containers/import-from-file/import-from-file.page';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, LandingPage, DashboardPage, ImportFromFilePage],
   imports: [
     BrowserModule,
     AppRoutingModule,

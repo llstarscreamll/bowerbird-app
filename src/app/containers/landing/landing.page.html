@@ -1,0 +1,15 @@
+<h1 class="text-center text-2xl text-gray-800 my-10">
+  Welcome {{ (auth.user | async)?.displayName }} to Bowerbird
+</h1>
+
+<div *ngIf="!(auth.user | async)" class="my-10 text-center">
+  <button type="button" class="rounded-sm py-2 px-5 bg-blue-400 text-white" (click)="login()">Login</button>
+</div>
+
+<div *ngIf="auth.user | async" class="my-10 text-center">
+  <a routerLink="dashboard" class="text-blue-400 underline">Dashboard</a>
+</div>
+
+<div *ngIf="auth.user | async" class="text-center">
+  <button type="button" class="text-red-400" (click)="logout()">Logout</button>
+</div>
